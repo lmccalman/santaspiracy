@@ -1,0 +1,15 @@
+seed = 666
+players = [
+    "andrew",
+    "eileen",
+    "gael",
+    "bruce",
+    "jac",
+    "lachy",
+    "james",
+    "chris",
+    "iain",
+    "kate",
+    "rohan",
+    "pete"
+]
