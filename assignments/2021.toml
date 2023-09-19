@@ -1,12 +1,12 @@
 assignments = [
-    ["andrew,  eileen"],
-    ["rohan,  jac"],
-    ["bruce,  rohan"],
-    ["pete,  lachy"],
-    ["iain,  gael"],
-    ["eileen,  pete"],
-    ["gael,  bruce"],
-    ["jac,  kate"],
-    ["kate,  iain"],
-    ["lachy,  andrew"]
+    ["andrew",  "eileen"],
+    ["rohan",  "jac"],
+    ["bruce",  "rohan"],
+    ["pete",  "lachy"],
+    ["iain",  "gael"],
+    ["eileen",  "pete"],
+    ["gael",  "bruce"],
+    ["jac",  "kate"],
+    ["kate",  "iain"],
+    ["lachy",  "andrew"]
 ]

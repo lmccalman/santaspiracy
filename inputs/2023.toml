@@ -1,4 +1,5 @@
 seed = 666
+blacklist = [2021, 2022]
 players = [
     "andrew",
     "eileen",

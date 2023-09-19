@@ -1,10 +1,11 @@
-eileen = boof
-boof = gael
-gael = pete
-pete = rohan
-rohan = iain
-iain = lachy
-lachy = kate
-kate = andrew
-andrew = jac
-jac = eileen
+assignments = [
+["eileen", "boof"],
+["boof", "gael"],
+["gael", "pete"],
+["pete", "rohan"],
+["rohan", "iain"],
+["iain", "lachy"],
+["lachy", "kate"],
+["kate", "andrew"],
+["andrew", "jac"],
+["jac", "eileen"]]
