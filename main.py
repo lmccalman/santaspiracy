@@ -2,13 +2,14 @@ import toml
 import sys
 import click
 from glob import glob
-import random
+from pathlib import Path
+import numpy as np
 from pathlib import Path
     
 
 def build_blacklist(years):
-    files = glob("./assignments/*.toml")
-    
+    all_files = [Path(p) for p in glob("./assignments/*.toml")]
+    files = [p for p in all_files if int(p.stem) in set(years)]
     people = set()
     pairs = []
     
@@ -40,14 +41,14 @@ def extended_rep(compact_rep):
 def cli(input):
       
     cfg = toml.load(input)
-    bl = build_blacklist(cfg['blacklist'])
-    
-    proposal = cfg["players"]
+    bl = build_blacklist(cfg["blacklist"])
+    proposal = sorted(cfg["players"])
+    rng = np.random.default_rng(int(cfg["seed"]))
+
     found = False
     it = 0
-    random.seed(cfg['seed'])
     while not found:
-        random.shuffle(proposal)
+        rng.shuffle(proposal)
         assignments = extended_rep(proposal)
         found = not is_blacklisted(assignments, bl)
         it += 1

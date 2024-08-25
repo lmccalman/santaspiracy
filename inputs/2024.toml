@@ -1,0 +1,16 @@
+seed = 666
+blacklist = [2022, 2023]
+players = [
+    "andrew",
+    "eileen",
+    "gael",
+    "bruce",
+    "jac",
+    "lachy",
+    "james",
+    "chris",
+    "iain",
+    "kate",
+    "rohan",
+    "pete"
+]
